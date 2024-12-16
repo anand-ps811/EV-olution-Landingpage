@@ -1,7 +1,6 @@
 import './navbar.css';
 
-
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div className='nav'>
         <div className='nav-logo'>EV-olution</div>

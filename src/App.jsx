@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Background from "./components/Background/Background.jsx";
-import { Navbar } from "./components/Navbar/Navbar.jsx";
+import  Navbar  from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import './index.css'
 export const App = () => {
@@ -12,12 +12,14 @@ export const App = () => {
   ]
   const [heroCount,setHeroCount]=useState(0);
   const [playStatus,setPlayStatus]=useState(false)
-useEffect(()=>{
-  setInterval(()=>{
-setHeroCount((count)=>{return count===2?0:count+1})
-  },3000)
-},[])
-
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHeroCount((count) => (count === 2 ? 0 : count + 1));
+    }, 3000);
+  
+    return () => clearInterval(interval); // Cleanup on unmount.
+  }, []);
+  
 
   return (
     <div>

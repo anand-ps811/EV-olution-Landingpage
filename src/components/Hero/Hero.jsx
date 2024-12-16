@@ -6,7 +6,7 @@ import pause_icon from '../../Assets/pause_icon.png';
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-export const Hero = ({ heroData, setHeroCount, heroCount, playStatus, setPlayStatus }) => {
+ const Hero = ({ heroData, setHeroCount, heroCount, playStatus, setPlayStatus }) => {
   return (
     <div className='hero'>
       <div className="hero-text">
