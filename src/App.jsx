@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { Background } from "./components/Background/background";
-import { Navbar } from "./components/Navbar/navbar";
-import Hero from "./components/Hero/hero";
+import { Background } from "./components/Background/Background.jsx";
+import { Navbar } from "./components/Navbar/Navbar.jsx";
+import Hero from "./components/Hero/Hero.jsx";
 import './index.css'
 export const App = () => {
   let heroData = [
