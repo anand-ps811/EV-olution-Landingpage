@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Background } from "./components/Background/Background.jsx";
+import Background from "./components/Background/Background.jsx";
 import { Navbar } from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import './index.css'

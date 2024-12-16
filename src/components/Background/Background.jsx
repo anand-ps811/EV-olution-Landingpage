@@ -6,7 +6,7 @@ import image2 from '../../Assets/image2.png'
 import image3 from '../../Assets/image3.png'
 
 // eslint-disable-next-line react/prop-types
-export const Background = ({playStatus,heroCount}) => {
+const Background = ({playStatus,heroCount}) => {
 
  if(playStatus){
     return(
@@ -26,3 +26,5 @@ export const Background = ({playStatus,heroCount}) => {
 
 
 }
+
+export default Background;
