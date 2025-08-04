@@ -15,15 +15,15 @@ posthog.init('phc_vEZ8Gf1ZEX266JlIZUU5oppfsecn2yggyYOKaJREUUw', {
     autocapture: true
 });
 posthog.register({
-    client_id: '688c515ed5b5e60e45a4c04b',
-    campaign_id: '688c5180d5b5e60e45a4c04d',
+    client_id: '689045f2d5b5e60e45a4c052',
+    campaign_id: '68904634d5b5e60e45a4c054',
 });
 
-posthog.group("client", "688c515ed5b5e60e45a4c04b");
-posthog.group("campaign", "688c5180d5b5e60e45a4c04d");
+posthog.group("client", "689045f2d5b5e60e45a4c052");
+posthog.group("campaign", "68904634d5b5e60e45a4c054");
   const fetchKeywords = async () => {
     try {
-      const response = await fetch('https://my.advertisingmarketplace.ai/api/fetch-keywords-by-client?clientId=688c515ed5b5e60e45a4c04b', {
+      const response = await fetch('https://my.advertisingmarketplace.ai/api/fetch-keywords-by-client?clientId=689045f2d5b5e60e45a4c052', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
